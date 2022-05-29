@@ -11,6 +11,8 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
+      width: double.maxFinite,
+      height: double.maxFinite,
       decoration: BoxDecoration(
           image: DecorationImage(
         image: AssetImage(
