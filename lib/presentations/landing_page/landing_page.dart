@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:nike_landing_page/presentations/landing_page/landing_desktop.dart';
-import 'package:nike_landing_page/presentations/landing_page/landing_mobile.dart';
-import 'package:nike_landing_page/presentations/landing_page/landing_tablet.dart';
+import 'package:glass_kit/glass_kit.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../../utils/size_config.dart';
+import 'landing_desktop.dart';
+import 'landing_mobile.dart';
+import 'landing_tablet.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -21,10 +24,23 @@ class LandingPage extends StatelessWidget {
         fit: BoxFit.cover,
       )),
       padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.05),
-      child: ScreenTypeLayout(
-        mobile: const LandingMobile(),
-        tablet: const LandingTablet(),
-        desktop: const LandingDesktop(),
+      child: Card(
+        color: Colors.transparent,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(SizeConfig.width_5),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: GlassContainer(
+          height: double.maxFinite,
+          width: double.maxFinite,
+          color: Color(0x66D9D9D9).withAlpha(47),
+          borderColor: Colors.transparent,
+          child: ScreenTypeLayout(
+            mobile: const LandingMobile(),
+            tablet: const LandingTablet(),
+            desktop: const LandingDesktop(),
+          ),
+        ),
       ),
     ));
   }
