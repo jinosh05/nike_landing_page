@@ -18,11 +18,11 @@ class LandingPage extends StatelessWidget {
       height: double.maxFinite,
       decoration: BoxDecoration(
           image: DecorationImage(
-        image: AssetImage(
-          'assets/bg.png',
-        ),
-        fit: BoxFit.cover,
-      )),
+              image: AssetImage(
+                'assets/bg.png',
+              ),
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.none)),
       padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.05),
       child: Card(
         color: Colors.transparent,
