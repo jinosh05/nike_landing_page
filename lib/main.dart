@@ -6,5 +6,7 @@ void main(List<String> args) {
   ResponsiveSizingConfig.instance.setCustomBreakpoints(
     const ScreenBreakpoints(desktop: 780, tablet: 480, watch: 200),
   );
-  runApp(const LandingPage());
+  runApp(MaterialApp(
+    home: LandingPage(),
+  ));
 }
