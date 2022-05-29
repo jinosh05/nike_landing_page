@@ -20,7 +20,7 @@ class LandingPage extends StatelessWidget {
         ),
         fit: BoxFit.cover,
       )),
-      padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.1),
+      padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.05),
       child: ScreenTypeLayout(
         mobile: const LandingMobile(),
         tablet: const LandingTablet(),
