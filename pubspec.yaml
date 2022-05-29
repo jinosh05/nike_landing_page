@@ -8,6 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  glass_kit: ^2.0.1
   responsive_builder: ^0.4.2
 
 flutter:
