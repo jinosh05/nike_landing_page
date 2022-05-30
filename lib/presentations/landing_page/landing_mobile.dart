@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
+import '../../env.dart';
 import '../../utils/size_config.dart';
 import '../../widget/blur_circle_widget.dart';
+import '../../widget/gradient_button.dart';
 
 class LandingMobile extends StatelessWidget {
   const LandingMobile({Key? key}) : super(key: key);
@@ -47,9 +50,58 @@ class LandingMobile extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          detailsColumn(),
         ],
       ),
+    );
+  }
+
+  Column detailsColumn() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          AppBase.shoeName,
+          style: GoogleFonts.roboto(
+            color: Colors.white,
+            fontSize: SizeConfig.fs_05,
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+        Text(
+          AppBase.shoePrice,
+          style: GoogleFonts.roboto(
+            color: Colors.white,
+            fontSize: SizeConfig.fs_03,
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+        SizedBox(
+          height: SizeConfig.height_1_5,
+        ),
+        Text(
+          AppBase.shoeDesc,
+          style: GoogleFonts.roboto(
+            color: AppBase.descTextColor,
+            fontSize: SizeConfig.fs_1_8,
+            fontWeight: FontWeight.w600,
+            height: 1.3,
+          ),
+        ),
+        SizedBox(
+          height: SizeConfig.height_2_5,
+        ),
+        GradiantButton(
+          text: AppBase.addToCart,
+          width: SizeConfig.width_80,
+          height: SizeConfig.height_5,
+          fSize: SizeConfig.fs_2,
+          onPressed: () {
+            debugPrint('Pressed Add to Cart');
+          },
+        )
+      ],
     );
   }
 }
