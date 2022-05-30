@@ -23,7 +23,8 @@ class LandingPage extends StatelessWidget {
               ),
               fit: BoxFit.cover,
               filterQuality: FilterQuality.none)),
-      padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.05),
+      padding: EdgeInsets.symmetric(
+          horizontal: SizeConfig.width_7, vertical: SizeConfig.height_3_5),
       child: Card(
         color: Colors.transparent,
         shape: RoundedRectangleBorder(
