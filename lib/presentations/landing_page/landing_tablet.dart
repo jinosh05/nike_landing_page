@@ -4,6 +4,7 @@ import 'package:nike_landing_page/utils/size_config.dart';
 
 import '../../env.dart';
 import '../../widget/blur_circle_widget.dart';
+import '../../widget/gradient_button.dart';
 
 class LandingTablet extends StatefulWidget {
   const LandingTablet({Key? key}) : super(key: key);
@@ -56,17 +57,30 @@ class _LandingTabletState extends State<LandingTablet> {
                       fontWeight: FontWeight.w900,
                     ),
                   ),
+                  SizedBox(
+                    height: SizeConfig.height_1_5,
+                  ),
                   Container(
                     width: SizeConfig.width_70,
                     child: Text(
                       AppBase.shoeDesc,
                       style: GoogleFonts.roboto(
                         color: AppBase.descTextColor,
-                        fontSize: SizeConfig.fs_2,
+                        fontSize: SizeConfig.fs_1_7,
                         fontWeight: FontWeight.w600,
+                        height: 1.3,
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: SizeConfig.height_2_5,
+                  ),
+                  GradiantButton(
+                    text: AppBase.addToCart,
+                    onPressed: () {
+                      debugPrint('Pressed Add to Cart');
+                    },
+                  )
                 ],
               ),
               Row()
