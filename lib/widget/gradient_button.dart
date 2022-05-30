@@ -9,14 +9,23 @@ class GradiantButton extends StatelessWidget {
     Key? key,
     required this.text,
     required this.onPressed,
+    this.width,
+    this.height,
+    this.fSize,
   }) : super(key: key);
   final String text;
   final VoidCallback onPressed;
+  final double? width;
+  final double? height;
+  final double? fSize;
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => onPressed,
       child: Container(
+        width: width ?? SizeConfig.width_25,
+        height: height ?? SizeConfig.height_5,
+        alignment: Alignment.center,
         padding: EdgeInsets.symmetric(
           horizontal: SizeConfig.width_4,
           vertical: SizeConfig.height_1,
@@ -46,7 +55,7 @@ class GradiantButton extends StatelessWidget {
           text,
           style: GoogleFonts.roboto(
             color: Colors.white,
-            fontSize: SizeConfig.fs_1_2,
+            fontSize: fSize ?? SizeConfig.fs_1_2,
             fontWeight: FontWeight.w600,
           ),
         ),
