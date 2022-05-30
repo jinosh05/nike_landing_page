@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:nike_landing_page/utils/size_config.dart';
 
 import '../../env.dart';
+import '../../widget/blur_circle_widget.dart';
 
 class LandingTablet extends StatefulWidget {
   const LandingTablet({Key? key}) : super(key: key);
@@ -30,14 +31,7 @@ class _LandingTabletState extends State<LandingTablet> {
             Positioned(
                 right: SizeConfig.width_40,
                 top: SizeConfig.height_2,
-                child: Container(
-                  height: SizeConfig.imgSize_30,
-                  width: SizeConfig.imgSize_30,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.12),
-                  ),
-                ))
+                child: BlurCircleWidget())
           ],
         )),
         SizedBox(
