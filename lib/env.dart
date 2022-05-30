@@ -1,3 +1,5 @@
+import 'package:flutter/rendering.dart';
+
 class AppBase {
   static final List<String> headings = [
     'HOME',
@@ -5,4 +7,6 @@ class AppBase {
     'ABOUT',
     'CONTACT'
   ];
+
+  static final Color primaryColor = Color(0x66D9D9D9);
 }

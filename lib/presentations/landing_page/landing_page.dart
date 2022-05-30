@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:glass_kit/glass_kit.dart';
+import 'package:nike_landing_page/env.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../utils/size_config.dart';
@@ -24,7 +25,7 @@ class LandingPage extends StatelessWidget {
               fit: BoxFit.cover,
               filterQuality: FilterQuality.none)),
       padding: EdgeInsets.symmetric(
-          horizontal: SizeConfig.width_7, vertical: SizeConfig.height_3_5),
+          horizontal: SizeConfig.width_7, vertical: SizeConfig.height_4),
       child: Card(
         color: Colors.transparent,
         shape: RoundedRectangleBorder(
@@ -34,7 +35,7 @@ class LandingPage extends StatelessWidget {
         child: GlassContainer(
           height: double.maxFinite,
           width: double.maxFinite,
-          color: Color(0x66D9D9D9).withAlpha(47),
+          color: AppBase.primaryColor.withAlpha(47),
           borderColor: Colors.transparent,
           child: ScreenTypeLayout(
             mobile: const LandingMobile(),
