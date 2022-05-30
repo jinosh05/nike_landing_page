@@ -9,4 +9,11 @@ class AppBase {
   ];
 
   static final Color primaryColor = Color(0x66D9D9D9);
+
+  static final String shoeName = 'Nike show';
+  static final String shoePrice = '\$499';
+  static final String shoeDesc =
+      'Nothing as fly, nothing as comfortable, nothing as proven—the Nike Air Max 90 stays true to its roots with the iconic Waffle sole, stitched overlays and classic TPU accents.';
+
+  static final String addToCart = 'ADD TO CART';
 }
