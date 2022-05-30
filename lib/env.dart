@@ -12,6 +12,10 @@ class AppBase {
 
   static final Color descTextColor = Color(0xffC2D4E3);
 
+  static final Color gradBlue = Color(0xff5C5CFF);
+
+  static final Color gradPink = Color(0xffEF93E3);
+
   static final String shoeName = 'Nike show';
   static final String shoePrice = '\$499';
   static final String shoeDesc =
