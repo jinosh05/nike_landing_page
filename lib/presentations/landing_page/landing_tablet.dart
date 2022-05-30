@@ -16,30 +16,64 @@ class _LandingTabletState extends State<LandingTablet> {
   List<bool> _hover = [false, false, false, false];
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: SizeConfig.height_1_5,
-        ),
-        appBar(),
-        SizedBox(
-          height: SizeConfig.height_3,
-        ),
-        Expanded(
-            child: Stack(
-          children: [
-            Positioned(
-                right: SizeConfig.width_40,
-                top: SizeConfig.height_2,
-                child: BlurCircleWidget(
-                  size: SizeConfig.imgSize_25,
-                ))
-          ],
-        )),
-        SizedBox(
-          height: SizeConfig.height_1,
-        ),
-      ],
+    return Padding(
+      padding: EdgeInsets.all(
+            SizeConfig.height_1_5,
+          ) +
+          EdgeInsets.only(left: SizeConfig.width_1),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          appBar(),
+          SizedBox(
+            height: SizeConfig.height_2,
+          ),
+          Expanded(
+              child: Stack(
+            children: [
+              Positioned(
+                  right: SizeConfig.width_40,
+                  top: SizeConfig.height_3,
+                  child: BlurCircleWidget(
+                    size: SizeConfig.imgSize_25,
+                  )),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    AppBase.shoeName,
+                    style: GoogleFonts.roboto(
+                      color: Colors.white,
+                      fontSize: SizeConfig.fs_11,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  Text(
+                    AppBase.shoePrice,
+                    style: GoogleFonts.roboto(
+                      color: Colors.white,
+                      fontSize: SizeConfig.fs_03,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  Container(
+                    width: SizeConfig.width_70,
+                    child: Text(
+                      AppBase.shoeDesc,
+                      style: GoogleFonts.roboto(
+                        color: AppBase.descTextColor,
+                        fontSize: SizeConfig.fs_2,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row()
+            ],
+          )),
+        ],
+      ),
     );
   }
 
