@@ -20,7 +20,29 @@ class _LandingTabletState extends State<LandingTablet> {
         SizedBox(
           height: SizeConfig.height_1_5,
         ),
-        appBar()
+        appBar(),
+        SizedBox(
+          height: SizeConfig.height_3,
+        ),
+        Expanded(
+            child: Stack(
+          children: [
+            Positioned(
+                right: SizeConfig.width_40,
+                top: SizeConfig.height_2,
+                child: Container(
+                  height: SizeConfig.imgSize_30,
+                  width: SizeConfig.imgSize_30,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.12),
+                  ),
+                ))
+          ],
+        )),
+        SizedBox(
+          height: SizeConfig.height_1,
+        ),
       ],
     );
   }
