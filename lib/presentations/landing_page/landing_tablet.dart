@@ -31,7 +31,9 @@ class _LandingTabletState extends State<LandingTablet> {
             Positioned(
                 right: SizeConfig.width_40,
                 top: SizeConfig.height_2,
-                child: BlurCircleWidget())
+                child: BlurCircleWidget(
+                  size: SizeConfig.imgSize_25,
+                ))
           ],
         )),
         SizedBox(

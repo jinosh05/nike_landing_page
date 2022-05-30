@@ -27,7 +27,7 @@ class LandingPage extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           horizontal: SizeConfig.width_7, vertical: SizeConfig.height_4),
       child: Card(
-        color: Colors.white.withOpacity(0.12),
+        color: Colors.white.withOpacity(0.20),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(SizeConfig.width_5),
         ),
@@ -35,7 +35,7 @@ class LandingPage extends StatelessWidget {
         child: GlassContainer(
           height: double.maxFinite,
           width: double.maxFinite,
-          color: AppBase.primaryColor.withAlpha(47),
+          color: AppBase.primaryColor.withAlpha(50),
           borderColor: Colors.white.withOpacity(0.15),
           child: ScreenTypeLayout(
             mobile: const LandingMobile(),
