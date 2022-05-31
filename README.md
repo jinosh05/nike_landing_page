@@ -59,8 +59,11 @@ I kept the code as original as possible with proper Commented Guides for anyone 
   - Extract the Repo into your newly created **nike_landing_page** and replace the required files.
   - Now you can Finally run VS-Code or Android Studio whichever you prefer and get the flutter packages and just run the App.
   
-# Download the APK
 
-Download the release APK 
+## 🔗 Useful links
 
-# Website link [Link](https://jocular-banoffee-479043.netlify.app/#/)
+🌐 Web App: [https://jocular-banoffee-479043.netlify.app/](https://jocular-banoffee-479043.netlify.app/)
+
+📱 Android App:Download the release APK 
+
+
