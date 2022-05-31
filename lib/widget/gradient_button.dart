@@ -21,7 +21,7 @@ class GradiantButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => onPressed,
+      onTap: () => onPressed(),
       child: Container(
         width: width ?? SizeConfig.width_25,
         height: height ?? SizeConfig.height_5,

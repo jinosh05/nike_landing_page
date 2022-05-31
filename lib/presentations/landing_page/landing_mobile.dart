@@ -22,7 +22,6 @@ class LandingMobile extends StatelessWidget {
             child: Stack(
               children: [
                 Positioned(
-                  right: SizeConfig.width_30,
                   top: SizeConfig.height_3,
                   child: BlurCircleWidget(
                     size: SizeConfig.imgSize_15 + SizeConfig.imgSize_2_5,
@@ -99,6 +98,7 @@ class LandingMobile extends StatelessWidget {
           fSize: SizeConfig.fs_2,
           onPressed: () {
             debugPrint('Pressed Add to Cart');
+            print('Mobile View');
           },
         )
       ],

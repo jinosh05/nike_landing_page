@@ -106,8 +106,10 @@ class _LandingDesktopState extends State<LandingDesktop> {
         ),
         GradiantButton(
           text: AppBase.addToCart,
+          height: SizeConfig.height_3_5,
           onPressed: () {
             debugPrint('Pressed Add to Cart');
+            print('Desktop View');
           },
         )
       ],
@@ -123,7 +125,7 @@ class _LandingDesktopState extends State<LandingDesktop> {
         for (var i = 0; i < AppBase.headings.length; i++)
           InkWell(
             onTap: () {
-              debugPrint('Tapped');
+              debugPrint('Tapped Desktop');
             },
             onHover: (bool value) {
               setState(() {

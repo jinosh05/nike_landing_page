@@ -29,38 +29,40 @@ class _LandingTabletState extends State<LandingTablet> {
           SizedBox(
             height: SizeConfig.height_2,
           ),
-          Expanded(
-              child: Stack(
-            children: [
-              Positioned(
-                right: SizeConfig.width_35,
-                top: SizeConfig.height_3,
-                child: BlurCircleWidget(
-                  size: SizeConfig.imgSize_25 + SizeConfig.imgSize_2_5,
-                ),
-              ),
-              detailsColumn(),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Image.asset(
-                  'assets/shoe.png',
-                  height: SizeConfig.imgSize_80,
-                ),
-              ),
-              Align(
-                  alignment: Alignment.centerRight,
+          Container(
+            height: SizeConfig.height_40,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Positioned(
+                  top: SizeConfig.height_1,
                   child: BlurCircleWidget(
-                    size: SizeConfig.imgSize_20 + SizeConfig.imgSize_2_5,
-                  )),
-              Positioned(
-                right: SizeConfig.width_40,
-                bottom: SizeConfig.height_3,
-                child: BlurCircleWidget(
-                  size: SizeConfig.imgSize_20,
+                    size: SizeConfig.imgSize_15 + SizeConfig.imgSize_2_5,
+                  ),
                 ),
-              ),
-            ],
-          )),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/shoe.png',
+                    ),
+                    Positioned(
+                        right: SizeConfig.width_1,
+                        child: BlurCircleWidget(
+                          size: SizeConfig.imgSize_15,
+                        )),
+                  ],
+                ),
+                Positioned(
+                  bottom: SizeConfig.height_2,
+                  child: BlurCircleWidget(
+                    size: SizeConfig.imgSize_13,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          detailsColumn()
         ],
       ),
     );
@@ -74,7 +76,7 @@ class _LandingTabletState extends State<LandingTablet> {
           AppBase.shoeName,
           style: GoogleFonts.roboto(
             color: Colors.white,
-            fontSize: SizeConfig.fs_11,
+            fontSize: SizeConfig.fs_05,
             fontWeight: FontWeight.w900,
           ),
         ),
@@ -89,16 +91,13 @@ class _LandingTabletState extends State<LandingTablet> {
         SizedBox(
           height: SizeConfig.height_1_5,
         ),
-        Container(
-          width: SizeConfig.width_70,
-          child: Text(
-            AppBase.shoeDesc,
-            style: GoogleFonts.roboto(
-              color: AppBase.descTextColor,
-              fontSize: SizeConfig.fs_1_7,
-              fontWeight: FontWeight.w600,
-              height: 1.3,
-            ),
+        Text(
+          AppBase.shoeDesc,
+          style: GoogleFonts.roboto(
+            color: AppBase.descTextColor,
+            fontSize: SizeConfig.fs_1_8,
+            fontWeight: FontWeight.w600,
+            height: 1.3,
           ),
         ),
         SizedBox(
@@ -106,8 +105,12 @@ class _LandingTabletState extends State<LandingTablet> {
         ),
         GradiantButton(
           text: AppBase.addToCart,
+          width: SizeConfig.width_80,
+          height: SizeConfig.height_5,
+          fSize: SizeConfig.fs_2,
           onPressed: () {
             debugPrint('Pressed Add to Cart');
+            print('Mobile View');
           },
         )
       ],
@@ -123,7 +126,7 @@ class _LandingTabletState extends State<LandingTablet> {
         for (var i = 0; i < AppBase.headings.length; i++)
           InkWell(
             onTap: () {
-              debugPrint('Tapped');
+              debugPrint('Tapped tablet');
             },
             onHover: (bool value) {
               setState(() {
@@ -134,7 +137,7 @@ class _LandingTabletState extends State<LandingTablet> {
               AppBase.headings[i],
               style: GoogleFonts.roboto(
                 color: _hover[i] ? Colors.pink : Colors.white,
-                fontSize: SizeConfig.fs_1_2,
+                fontSize: SizeConfig.fs_1_4,
                 fontWeight: FontWeight.w600,
               ),
             ),
