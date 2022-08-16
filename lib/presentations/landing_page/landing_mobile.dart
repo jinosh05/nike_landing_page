@@ -21,10 +21,13 @@ class LandingMobile extends StatelessWidget {
             height: SizeConfig.height_35,
             child: Stack(
               children: [
-                Positioned(
-                  top: SizeConfig.height_3,
-                  child: BlurCircleWidget(
-                    size: SizeConfig.imgSize_15 + SizeConfig.imgSize_2_5,
+                Padding(
+                  padding: EdgeInsets.only(top: SizeConfig.height_3),
+                  child: Align(
+                    alignment: Alignment.topCenter,
+                    child: BlurCircleWidget(
+                      size: SizeConfig.imgSize_15 + SizeConfig.imgSize_2_5,
+                    ),
                   ),
                 ),
                 Align(
