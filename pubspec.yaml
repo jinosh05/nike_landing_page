@@ -9,8 +9,8 @@ dependencies:
   flutter:
     sdk: flutter
   glass_kit: ^2.0.1
-  google_fonts: ^3.0.1
-  responsive_builder: ^0.4.2
+  google_fonts: ^4.0.3
+  responsive_builder: ^0.6.0
 
 flutter:
   uses-material-design: true
