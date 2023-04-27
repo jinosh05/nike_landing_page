@@ -48,10 +48,16 @@ class LandingPage extends StatelessWidget {
                 width: double.maxFinite,
                 color: AppBase.primaryColor.withAlpha(50),
                 borderColor: Colors.white.withOpacity(0.15),
-                child: ScreenTypeLayout(
-                  mobile: const LandingMobile(),
-                  tablet: const LandingTablet(),
-                  desktop: const LandingDesktop(),
+                child: ScreenTypeLayout.builder(
+                  mobile: (context) {
+                    return const LandingMobile();
+                  },
+                  tablet: (context) {
+                    return const LandingTablet();
+                  },
+                  desktop: (context) {
+                    return const LandingDesktop();
+                  },
                 ),
               ),
             ),
