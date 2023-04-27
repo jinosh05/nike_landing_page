@@ -4,13 +4,13 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ">=2.19.6 <3.0.0"
 dependencies:
   flutter:
     sdk: flutter
   glass_kit: ^2.0.1
-  google_fonts: ^4.0.3
-  responsive_builder: ^0.6.0
+  google_fonts: ^4.0.4
+  responsive_builder: ^0.4.2
 
 flutter:
   uses-material-design: true

@@ -21,10 +21,10 @@ packages:
     dependency: transitive
     description:
       name: collection
-      sha256: "4a07be6cb69c84d677a6c3096fcf960cc3285a8330b4603e0d463d15d9bd934c"
+      sha256: cfc915e6923fe5ce6e153b0723c753045de46de1b4d63771530504004a45fae0
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.1"
+    version: "1.17.0"
   crypto:
     dependency: transitive
     description:
@@ -66,10 +66,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_fonts
-      sha256: "927573f2e8a8d65c17931e21918ad0ab0666b1b636537de7c4932bdb487b190f"
+      sha256: "8f099045e2f2a30e4d4d0a35f40c6bc941a8f2ca0e10ad9d214ee9edd3f37483"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.3"
+    version: "3.0.1"
   http:
     dependency: transitive
     description:
@@ -90,10 +90,10 @@ packages:
     dependency: transitive
     description:
       name: js
-      sha256: f2c445dce49627136094980615a031419f7f3eb393237e4ecd97ac15dea343f3
+      sha256: "5528c2f391ededb7775ec1daa69e65a2d61276f7552de2b5f7b8d34ee9fd4ab7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.7"
+    version: "0.6.5"
   material_color_utilities:
     dependency: transitive
     description:
@@ -106,18 +106,10 @@ packages:
     dependency: transitive
     description:
       name: meta
-      sha256: "12307e7f0605ce3da64cf0db90e5fcab0869f3ca03f76be6bb2991ce0a55e82b"
+      sha256: "6c268b42ed578a53088d834796959e4a1814b5e9e164f147f580a386e5decf42"
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.0"
-  nested:
-    dependency: transitive
-    description:
-      name: nested
-      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
+    version: "1.8.0"
   path:
     dependency: transitive
     description:
@@ -198,22 +190,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.4"
-  provider:
-    dependency: transitive
-    description:
-      name: provider
-      sha256: cdbe7530b12ecd9eb455bdaa2fcb8d4dad22e80b8afb4798b41479d5ce26847f
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.5"
   responsive_builder:
     dependency: "direct main"
     description:
       name: responsive_builder
-      sha256: "824fa4a5822096a3c70804652b85e856d04099cb4f637e99fbee468db08e7177"
+      sha256: f01bc341c73b6db7bd6319e22d2c160f28f924399ae46e6699ecc8160ba2765c
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.0"
+    version: "0.4.3"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -276,5 +260,5 @@ packages:
     source: hosted
     version: "1.0.0"
 sdks:
-  dart: ">=2.19.0 <=3.0.0"
+  dart: ">=2.19.6 <3.0.0"
   flutter: ">=3.0.0"
