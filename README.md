@@ -48,8 +48,7 @@ and find the output in `build/app/outputs/flutter-apk/app-release.apk`
 
 #### Dev hints
 
-Currently supports flutter: 3.0.1
-
+Currently supports flutter: 3.10.0
   
 # How to get this Repo and run it on your System
 
